@@ -15,6 +15,7 @@
 }
 
 #footer .footer-wrap .fw-h .fw-h-l {
+  position: relative;
   float: left;
   width: 216px;
   height: 150px;
@@ -71,6 +72,16 @@
 
 #footer .footer-wrap .fw-h .fw-h-l ul li a:hover {
   text-decoration: underline;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l ul .mark {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  background: url(../images/business.png) no-repeat;
 }
 
 #footer .footer-wrap .fw-h .fw-h-r {
