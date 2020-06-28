@@ -1,0 +1,238 @@
+#main {
+  margin-left: 480px;
+}
+
+#main #banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 480px;
+  float: left;
+  background-color: pink;
+}
+
+#main #banner #img-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+#main #banner #img-box img:nth-child(1) {
+  opacity: 1;
+}
+
+#main #c-head {
+  height: 100px;
+  width: 1039px;
+  margin: 0 auto;
+}
+
+#main #c-head .c-head {
+  height: 100px;
+}
+
+#main #c-head .c-head .logo {
+  position: fixed;
+  top: 8px;
+  left: 24px;
+  float: left;
+  font-size: 36px;
+  color: #000;
+}
+
+#main #c-head .c-head .ch {
+  float: right;
+  font-size: 16px;
+  margin: 30px 60px 0 0;
+}
+
+#main #c-head .c-head .ch-r {
+  color: #000;
+  opacity: .6;
+}
+
+#main #c-head .c-head .ch-c {
+  color: #000;
+  opacity: .6;
+}
+
+#main #c-head .c-head .ch-l {
+  position: relative;
+  display: inline-block;
+  width: 59px;
+  height: 24px;
+  padding: 0 10px 0 24px;
+  background: linear-gradient(126deg, #fc4754, #ff794c) #f54444;
+  border-radius: 6px;
+  line-height: 24px;
+  color: #fff;
+}
+
+#main #c-head .c-head .ch-l img {
+  position: absolute;
+  top: -10px;
+  left: -3px;
+}
+
+#main #content .c-body {
+  width: 480px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+#main #content .c-body h1 {
+  height: 57px;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+#main #content .c-body h2 {
+  height: 36px;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 64px;
+}
+
+#main #content .c-body h2 a {
+  float: right;
+  font-size: 24px;
+  color: #359eff;
+}
+
+#main #content .c-body .input {
+  position: relative;
+}
+
+#main #content .c-body .input input {
+  text-align: left;
+  font-size: 20px;
+  width: 430px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-weight: lighter;
+  float: left;
+}
+
+#main #content .c-body .name {
+  margin-bottom: 26px;
+  height: 52px;
+}
+
+#main #content .c-body .name span {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+
+#main #content .c-body .password {
+  margin-bottom: 26px;
+  height: 52px;
+}
+
+#main #content .c-body .password span {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+
+#main #content .c-body .list {
+  position: relative;
+  height: 52px;
+}
+
+#main #content .c-body .list .list-l {
+  width: 112px;
+  margin-right: 16px;
+}
+
+#main #content .c-body .list img {
+  position: absolute;
+  left: 134px;
+  top: 22px;
+}
+
+#main #content .c-body .list #phone {
+  width: 255px;
+}
+
+#main #content .c-body .none {
+  display: none;
+}
+
+#main #content .c-body .test {
+  margin-top: 20px;
+}
+
+#main #content .c-body .test #phone {
+  width: 300px;
+  height: 52px;
+  border: 1px solid #3083ff;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #3487ff;
+  color: #fff;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+#main #content .c-body .register {
+  height: 116px;
+}
+
+#main #content .c-body .register input {
+  width: 476px;
+  height: 58px;
+  margin-top: 40px;
+  border: 1px solid #3083ff;
+  border-radius: 4px;
+  font-size: 24px;
+  background-color: #3487ff;
+  color: #fff;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+#main #content .c-body .register input:hover {
+  background-color: #3580eb;
+}
+
+#main #content .c-body .clause {
+  width: 300px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#main #content .c-body .clause img {
+  float: left;
+}
+
+#main #content .c-body .clause img:nth-child(3) {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+
+#main #content .c-body .clause p {
+  float: left;
+}
+
+#main #content .c-body p {
+  font-size: 14px;
+  color: #999;
+}
+
+#main #content .copy {
+  font-size: 14px;
+  color: #bbb;
+  text-align: center;
+  margin: 30px 0;
+  font-weight: lighter;
+}

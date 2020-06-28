@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* 底部区域 */
+#footer {
+  background: #3b3f4a;
+}
+
+#footer .footer-wrap {
+  height: 354px;
+}
+
+#footer .footer-wrap .fw-h {
+  padding: 25px 0 33px;
+  width: 1252px;
+  height: 150px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l {
+  float: left;
+  width: 216px;
+  height: 150px;
+  border-right: 1px solid #444853;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l h4 {
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ACB1BB;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l h4 i {
+  float: left;
+  margin: 0 10px 0 20px;
+  width: 32px;
+  height: 32px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l h4 .icon1 {
+  background: url(../images/icon.png) no-repeat;
+  background-position: 0 -136px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l h4 .icon2 {
+  background: url(../images/icon.png) no-repeat;
+  background-position: -32px -136px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l h4 .icon3 {
+  background: url(../images/icon.png) no-repeat;
+  background-position: -63px -136px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l h4 .icon4 {
+  background: url(../images/icon.png) no-repeat;
+  background-position: -95px -136px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l ul {
+  height: 94px;
+  margin-left: 64px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l ul li {
+  line-height: 22px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l ul li a {
+  color: #ACB1BB;
+  font-size: 12px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-l ul li a:hover {
+  text-decoration: underline;
+}
+
+#footer .footer-wrap .fw-h .fw-h-r {
+  float: left;
+  width: 298px;
+  height: 150px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-r .ewm {
+  float: left;
+  margin-left: 40px;
+  width: 100px;
+}
+
+#footer .footer-wrap .fw-h .fw-h-r .ewm img {
+  width: 100%;
+}
+
+#footer .footer-wrap .fw-h .fw-h-r .ewm p {
+  color: #A4ABB4;
+  margin-top: 12px;
+  text-align: center;
+}
+
+#footer .footer-wrap .fw-f {
+  padding-top: 30px;
+  border-top: 1px solid #444853;
+}
+
+#footer .footer-wrap .fw-f .fw-f-wrap {
+  height: 55px;
+}
+
+#footer .footer-wrap .fw-f .fw-f-wrap p {
+  width: 1190px;
+  font-size: 12px;
+  text-align: center;
+  color: #81858F;
+}
+
+#footer .footer-wrap .fw-f .fw-f-wrap .f-w-list li {
+  float: left;
+  font-size: 12px;
+  color: #81858F;
+}
+
+#footer .footer-wrap .fw-f .fw-f-wrap .f-w-list a {
+  padding-left: 3px;
+  color: #81858F;
+}
+
+#footer .footer-wrap .fw-f .fw-f-wrap .f-w-list a:hover {
+  text-decoration: underline;
+}
+
+#footer .footer-wrap .fw-f .fw-f-wrap .copy a {
+  color: #81858F;
+}
+
+/* 返回顶部 */
+#fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 300px;
+}
+
+#fixed .f-h {
+  display: block;
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+  width: 68px;
+  height: 57px;
+  text-align: center;
+  font-size: 12px;
+  color: #3A3F4A;
+}
+
+#fixed .f-h i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/bg.png);
+  background-position: -122px -153px;
+  margin: 0 auto;
+}
+
+#fixed .f-h:hover i {
+  background-position: -162px -153px;
+}
+
+#fixed .f-f {
+  display: block;
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+  width: 68px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #3A3F4A;
+  margin-top: 4px;
+}
+
+#fixed a:hover {
+  background-color: #36AB87;
+  color: #fff;
+}

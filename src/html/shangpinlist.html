@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/shangpinlist.css">
+</head>
+
+<body>
+
+    <!-- 顶部区域 -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="menu1">
+                <a href="#">手机版</a>
+                <i>|</i>
+                <a href="#">Q币充值</a>
+            </div>
+            <ul class="menu2">
+                <li><a href="#">您还未登录，请登录</a></li>
+                <i>|</i>
+                <li><a href="#">我的订单</a></li>
+                <i>|</i>
+                <li><a href="#">个人中心</a></li>
+                <i>|</i>
+                <li><a href="#">帮助中心</a></li>
+                <i>|</i>
+                <li><a class="submenu" href="#">游戏导航</a></li>
+            </ul>
+            <div class="list-game none">
+                <ul class="game">
+                    <p>
+                        角色扮演
+                        <span>（18）</span>
+                    </p>
+                    <ul>
+                        <li><a href="javascript:;">上古世纪</a></li>
+                        <li>
+                            <a href="javascript:;">冒险岛2</a>
+                            <i></i>
+                        </li>
+                        <li><a href="javascript:;">御龙在天经典版</a></li>
+                        <li><a href="javascript:;">QQ幻想</a></li>
+                        <li><a href="javascript:;">斗战神</a></li>
+                        <li>
+                            <a href="javascript:;">地下城与勇士</a>
+                            <i></i>
+                        </li>
+                        <li><a href="javascript:;">轩辕</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">天堂2</a></li>
+                        <li><a href="javascript:;">仙侠传</a></li>
+                        <li><a href="javascript:;">自由幻想</a></li>
+                        <li><a href="javascript:;">天堂</a></li>
+                        <li><a href="javascript:;">幻想世世界</a></li>
+                        <li>
+                            <a href="javascript:;">QQ三国</a>
+                            <i></i>
+                        </li>
+                        <li><a href="javascript:;">疾风之刃</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">刀剑2</a></li>
+                        <li>
+                            <a href="javascript:;">剑灵</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">御龙在天</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">天涯明月刀</a>
+                            <i></i>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="game">
+                    <p class="jj">
+                        竞技游戏
+                        <span>（11）</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">NBA2KOL2</a>
+                            <i></i>
+                        </li>
+                        <li><a href="javascript:;">极品飞车OL</a></li>
+                        <li><a href="javascript:;">战争雷霆</a></li>
+                        <li>
+                            <a href="javascript:;">NBA2KOL</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">CODOL使命召唤</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">地下城与勇士</a>
+                            <i></i>
+                        </li>
+                        <li><a href="javascript:;">轩辕</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">枪神纪</a></li>
+                        <li>
+                            <a href="javascript:;">逆战</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">FIFA OL3</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">FIFA OL4</a>
+                            <i></i>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="game">
+                    <p class="xx">
+                        休闲游戏
+                        <span>（3）</span>
+                    </p>
+                    <ul>
+                        <li><a href="javascript:;">炫舞时代</a></li>
+                        <li>
+                            <a href="javascript:;">飞车</a>
+                            <i></i>
+                        </li>
+                        <li>
+                            <a href="javascript:;">炫舞</a>
+                            <i></i>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="game">
+                    <p class="xx">
+                        网页游戏
+                        <span>（6）</span>
+                    </p>
+                    <ul>
+                        <li><a href="javascript:;">捕鱼达人3D</a></li>
+                        <li><a href="javascript:;">英魂之刃</a></li>
+                        <li>
+                            <a href="javascript:;">火影忍者Online</a>
+                            <i></i>
+                        </li>
+                        <li><a href="javascript:;">部落守卫战(网页版)</a></li>
+                        <li><a href="javascript:;">宠物大乐斗</a></li>
+                        <li><a href="javascript:;">烽火战国</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航条区域 -->
+    <div id="main">
+        <div id="nav">
+            <div class="logo">
+                <div class="logo-djc">
+                    <a href="#"></a>
+                </div>
+                <div class="search-input-box">
+                    <input class="search-input" type="text" placeholder="输入道具进行搜索">
+                    <a class="search-btn" href="#"></a>
+                </div>
+                <div class="logo-lol">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <ul class="nav-wrap">
+                <li><a href="#">首页</a></li>
+                <li class="nav-wrap-h"><a href="#">商品列表</a></li>
+                <li><a href="#">活动专区</a></li>
+                <li><a href="#">限时折扣</a></li>
+                <li><a href="#">聚豆乐园</a></li>
+                <li><a href="#">周边商城</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li class="nav-wrap-f">
+                    <span></span>
+                    <a href="#">购物车（0）</a>
+                </li>
+            </ul>
+            <ul class="navicon">
+                <li class="navicon-h"><a href="#">全部分类</a></li>
+                <li><a href="#">英雄</a></li>
+                <li><a href="#">表情</a></li>
+                <li><a href="#">海克斯及其他</a></li>
+                <li><a href="#">云顶之弈</a></li>
+                <li><a href="#">皮肤</a></li>
+                <li><a href="#">道具</a></li>
+                <li><a href="#">守卫眼皮肤</a></li>
+                <li><a href="#">道具包</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 所在位置 -->
+    <div id="weizi">
+        您现在的位置：
+        <a href="#">英雄联盟</a>
+        &nbsp;&nbsp;&gt;&nbsp;&nbsp;
+        <a href="#">全部分类</a>
+    </div>
+
+    <!-- 商品区 -->
+    <div id="commodity">
+        <div class="commodity-list">
+            <div class="cl-h">
+                <div class="cl-head">
+                    <p>热门排行</p>
+                </div>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list01.jpg" alt="">
+                    <i class="comico">01</i>
+                    <h3>腥红之月 烬</h3>
+                    <h4>Q币价： 79.00Q币</h4>
+                    <p>微信价： <span>￥76.63</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list02.jpg" alt="">
+                    <i class="comico">02</i>
+                    <h3>屠龙勇士 赵信</h3>
+                    <h4>Q币价： 79.00Q币</h4>
+                    <p>微信价： <span>￥76.63</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list03.jpg" alt="">
+                    <i class="comico">03</i>
+                    <h3>死亡绽放 卡兹克</h3>
+                    <h4>Q币价： 69.00Q币</h4>
+                    <p>微信价： <span>￥66.93</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list04.jpg" alt="">
+                    <i class="comico">04</i>
+                    <h3>泳池派对 德莱文</h3>
+                    <h4>Q币价： 49.50Q币</h4>
+                    <p>微信价： <span>￥48.01</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list09.jpg" alt="">
+                    <i class="comico">05</i>
+                    <h3>源计划：联合</h3>
+                    <h4>Q币价： 99.00Q币</h4>
+                    <p>微信价： <span>￥96.03</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list10.jpg" alt="">
+                    <i class="comico">06</i>
+                    <h3>灌篮高手 德莱厄斯</h3>
+                    <h4>Q币价： 69.00Q币</h4>
+                    <p>微信价： <span>￥66.93</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list11.jpg" alt="">
+                    <i class="comico">07</i>
+                    <h3>驯龙女巫 婕拉</h3>
+                    <h4>Q币价： 79.00Q币</h4>
+                    <p>微信价： <span>￥76.63</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list12.jpg" alt="">
+                    <i class="comico">08</i>
+                    <h3>源计划：雷 卢锡安</h3>
+                    <h4>Q币价： 79.00Q币</h4>
+                    <p>微信价： <span>￥76.63</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list13.jpg" alt="">
+                    <i class="comico">09</i>
+                    <h3>腥红之月 亚索</h3>
+                    <h4>Q币价： 79.00Q币</h4>
+                    <p>微信价： <span>￥76.63</span></p>
+                </a>
+                <a class="cl-content" href="javascript:;">
+                    <img src="../images/cw-list14.jpg" alt="">
+                    <i class="comico">10</i>
+                    <h3>泳池派对 露露</h3>
+                    <h4>Q币价： 49.50币</h4>
+                    <p>微信价： <span>￥48.01</span></p>
+                </a>
+            </div>
+            <div class="cl-f">
+                <div class="cl-head">
+                    <p>周边商城</p>
+                </div>
+                <a class="cl-f-p" href="#">
+                    <img src="../images/periphery05.jpg" alt="">
+                    <h3>K/DA 阿狸 手办</h3>
+                    <p>￥150.00</p>
+                </a>
+                <a class="cl-f-p" href="#">
+                    <img src="../images/periphery06.jpg" alt="">
+                    <h3>英雄联盟funko手办-金克斯</h3>
+                    <p>￥88.00</p>
+                </a>
+                <a class="cl-f-p" href="#">
+                    <img src="../images/periphery07.jpg" alt="">
+                    <h3>2019全球总决赛绒球帽</h3>
+                    <p>￥180.00</p>
+                </a>
+                <a class="cl-f-p" href="#">
+                    <img src="../images/periphery08.jpg" alt="">
+                    <h3>阿利斯塔收藏款毛绒</h3>
+                    <p>￥108.00</p>
+                </a>
+                <a class="more" href="#">更多&gt;</a>
+            </div>
+        </div>
+        <div class="commodity-wrap">
+            <div class="cw-head">
+                <div class="ch-h">
+                    <div class="ch-h-l">
+                        <p>关键字：</p>
+                        <input type="text">
+                    </div>
+                    <div class="ch-h-r">
+                        <p>价格区间(QB)：</p>
+                        <input type="text">
+                        -
+                        <input type="text">
+                        <input class="qd" type="button" value="确定">
+                    </div>
+                </div>
+                <div class="ch-f">
+                    <div class="ch-f-l">
+                        <a href="#">上架时间</a>
+                        <a href="#">
+                            销量
+                            <i class="icon1"></i>
+                        </a>
+                        <a href="#">
+                            价格
+                            <i class="icon2"></i>
+                        </a>
+                    </div>
+                    <div class="ch-f-r">
+                        <i class="icon3"></i>
+                        <a href="#">显示未拥有</a>
+                        <i class="icon3"></i>
+                        <a href="#">显示已拥有</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cw-content">
+                <div class="content-box">
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content09.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">使不得，使不得!</a>
+                            <p class="cw-list2">Q币价： <span>20 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥19.40</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content10.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">差不多到时间了!</a>
+                            <p class="cw-list2">Q币价： <span>20 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥19.40</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content11.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">征服者 韦鲁斯</a>
+                            <p class="cw-list2">Q币价： <span>49 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥47.53</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content12.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">防暴士兵 格雷福斯</a>
+                            <p class="cw-list2">Q币价： <span>69 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥66.93</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content13.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 赛娜 炫彩礼包</a>
+                            <p class="cw-list2">Q币价： <span>181.71 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥176.25</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content14.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 艾瑞莉娅 炫彩礼包</a>
+                            <p class="cw-list2">Q币价： <span>195.21 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥189.35</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content15.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">荒野幽灵 费德提克 炫彩礼包</a>
+                            <p class="cw-list2">Q币价： <span>174 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥168.78</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content16.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部魔影 卢锡安 炫彩礼包</a>
+                            <p class="cw-list2">Q币价： <span>165.71 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥160.73</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content17.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部牛仔 烬 炫彩礼包</a>
+                            <p class="cw-list2">Q币价： <span>189.71 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥184.01</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content18.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 艾瑞莉娅 觅魂版</a>
+                            <p class="cw-list2">Q币价： <span>119 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥115.43</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content19.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 赛娜 觅魂版</a>
+                            <p class="cw-list2">Q币价： <span>141.5 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥137.25</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content20.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使(2020)图标</a>
+                            <p class="cw-list2">Q币价： <span>12.5 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥12.12</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content21.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 赛娜 加麦基之礼</a>
+                            <p class="cw-list2">Q币价： <span>20 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥19.40</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content22.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 赛娜 布耶尔之疗</a>
+                            <p class="cw-list2">Q币价： <span>20 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥19.40</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content23.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 赛娜 路西法之逆</a>
+                            <p class="cw-list2">Q币价： <span>20 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥19.40</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="javascript:;"><img src="../images/cw-content24.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <a class="cw-list1" href="#">西部天使 艾瑞莉娅 瓦沙克之言</a>
+                            <p class="cw-list2">Q币价： <span>20 Q币</span></p>
+                            <p class="cw-list2">微信价： <span>￥19.40</span></p>
+                            <a class="cw-list3" href="#">立即购买</a>
+                        </dd>
+                    </dl>
+                    
+                </div>
+                <div class="page-box">
+                    <a class="page-b page-up" href="#">
+                        <em></em>
+                        上一页
+                    </a>
+                    <a class="page page-head" href="#">1</a>
+                    <a class="page" href="#">2</a>
+                    <a class="page" href="#">3</a>
+                    <a class="page" href="#">4</a>
+                    <a class="page" href="#">5</a>
+                    <a class="page-b page-down" href="#">
+                        下一页
+                        <em></em>
+                    </a>
+                    <p>
+                        共93页 到第
+                        <input type="text">
+                        页
+                    </p>
+                    <a class="determine" href="#">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部区域 -->
+    <div id="footer">
+        <div class="footer-wrap">
+            <div class="fw-h">
+                <div class="fw-h-l">
+                    <h4>
+                        <i class="icon1"></i>
+                        我是新手
+                    </h4>
+                    <ul>
+                        <li><a href="#">什么是道聚城</a></li>
+                        <li><a href="#">如何购买</a></li>
+                        <li><a href="#">如何赠送</a></li>
+                        <li><a href="#">如何获取聚豆</a></li>
+                    </ul>
+                </div>
+                <div class="fw-h-l">
+                    <h4>
+                        <i class="icon2"></i>
+                        个人中心
+                    </h4>
+                    <ul>
+                        <li><a href="#">发货时间</a></li>
+                        <li><a href="#">如何领取</a></li>
+                        <li><a href="#">补发规则</a></li>
+                        <li><a href="#">Vip价定义</a></li>
+                        <li><a href="#">道具状态定义</a></li>
+                    </ul>
+                </div>
+                <div class="fw-h-l">
+                    <h4>
+                        <i class="icon3"></i>
+                        支付方式
+                    </h4>
+                    <ul>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">购物点支付</a></li>
+                        <li><a href="#">如何充值</a></li>
+                    </ul>
+                </div>
+                <div class="fw-h-l">
+                    <h4>
+                        <i class="icon4"></i>
+                        腾讯在线服务
+                    </h4>
+                    <ul>
+                        <li><a href="#">腾讯官方在线客服</a></li>
+                    </ul>
+                </div>
+                <div class="fw-h-r">
+                    <div class="ewm">
+                        <img src="../images/fw-h01.png" alt="">
+                        <p>掌上道聚城</p>
+                    </div>
+                    <div class="ewm">
+                        <img src="../images/fw-h02.png" alt="">
+                        <p>道聚城公众号</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fw-f">
+                <div class="fw-f-wrap">
+                    <p class="f-w-list">
+                        <a href="#">腾讯互动娱乐</a>
+                        |
+                        <a href="#">服务条款</a>
+                        |
+                        <a href="#">腾讯游戏隐私保护指引</a>
+                        |
+                        <a href="#">腾讯游戏儿童隐私保护指引</a>
+                        |
+                        <a href="#">广告服务</a>
+                        |
+                        <a href="#">腾讯游戏招聘</a>
+                        |
+                        <a href="#">腾讯游戏客服</a>
+                        |
+                        <a href="#">游戏地图</a>
+                        |
+                        <a href="#">成长守护平台</a>
+                        |
+                        <a href="#">商务合作</a>
+                        |
+                        <a href="#">网站导航</a>
+                    </p>
+                    <p>COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+                    <p class="copy"><a href="#">腾讯公司 版权所有</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div id="fixed">
+        <a class="f-h" href="#">
+            <i></i>
+            返回顶部
+        </a>
+        <a class="f-f" href="#">反馈</a>
+    </div>
+</body>
+
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/game-nav.js"></script>

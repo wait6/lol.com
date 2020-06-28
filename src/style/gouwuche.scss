@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* 公共样式 */
+.header-wrap,#nav,#weizi,#shopping,.footer-wrap{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #F3F4F6;
+}
+
+#main{
+    background: url(../images/bg-head.jpg) no-repeat top center;
+}
+
+/* 顶部区域 */
+#header{
+    height: 30px;
+    font-size: 12px;
+    background-color: #F9F9F9;
+    line-height: 30px;
+    .menu1{
+        float: left;
+        a{
+            float: left;
+            color: #666666;
+        }
+        a:nth-child(1){
+            padding-left: 15px;
+            background: url(../images/indexico.png) no-repeat;
+            background-position: -42px -817px;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        i{
+            float: left;
+            color: #ECE8E7;
+            margin: 0 10px;
+        } 
+    }
+    .menu2{
+        float: right;
+        li{
+            float: left;
+            a{
+                color: #666666;
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+        }
+        i{
+            float: left;
+            color: #ECE8E7;
+            margin: 0 10px;
+        }
+        .submenu{
+            display: block;
+            width: 72px;
+            height: 21px;
+            line-height: 21px;
+            margin-top: 5px;
+            padding-left: 8px;
+            background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/indexico.png) no-repeat;
+            background-position: -125px -273px;
+            border: 1px solid #E7E8E7;
+        }
+    }
+    .list-game{
+        width: 715px;
+        height: 237px;
+        padding: 5px;
+        background-color: #EFEFEF;
+        position: absolute;
+        top: 40px;right: 200px;
+        z-index: 1;
+        .game{
+            float: left;
+            p{
+                width: 304px;
+                color: #0096D0;
+                font-weight: bold;
+                border: 1px solid #D6D6D6;
+                background-color: #ffffff;
+                span{
+                    color: #BBBFCB;
+                    font-size: 10px;
+                }
+            }
+            .jj{
+                width: 202px;
+            }
+            .xx{
+                width: 100px;
+            }
+            ul{
+                float: left;
+                li{
+                    border: 1px solid #D6D6D6;
+                    background-color: #ffffff;
+                    width: 94px;
+                    height: 21px;
+                    line-height: 21px;
+                    padding: 3px;
+                    a{
+                        display: inline-block;
+                        width: 78px;
+                        color: #464646;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    a:hover{
+                        color: #1994EB;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 10px;
+                        height: 21px;
+                        background: url(../images/gamearea.png)no-repeat center center;
+                        background-position: 0 -50px;
+                    }
+                }
+            }
+        }
+    }
+    .none{
+        display: none;
+    }
+}
+
+
+/* 导航区域 */
+#nav{
+    min-height: 200px;
+    /* 导航区域上部 */
+    .logo{
+        height: 125px;
+        background: url(../images/search.jpg) no-repeat;
+        .logo-djc a{
+            display: block;
+            float: left;
+            width: 280px;
+            height: 55px;
+            background: url(../images/navico.png) no-repeat;
+            background-position: -670px -5px;
+            margin-top: 40px;
+        }
+        .search-input-box{
+            float: left;
+            position: relative;
+            margin-left: 80px;
+            margin-top: 40px;
+            width: 520px;
+            height: 51px;
+            background: url(../images/navico.png);
+            background-position: -1001px 0;
+            .search-input{
+                float: left;
+                width: 450px;
+                padding: 18px 10px 15px 10px;
+                height: 18px;
+                line-height: 18px;
+                border: 0;
+                color: #9f9f9f;
+                font-size: 14px;
+                background: none;
+            }
+            .search-btn{
+                position: absolute;
+                top: 2px;left: 470px;
+                width: 49px;
+                height: 46px;
+                background: url(../images/navico.png);
+                background-position: -1558px 0;
+                display: block;
+            }
+        }
+        .logo-lol a{
+            display: block;
+            float: right;
+            width: 223px;
+            height: 59px;
+            background: url(../images/navico.png) no-repeat;
+            background-position: -437px -5px;
+            margin-top: 40px;
+        }
+    }
+    /* 导航区域中部 */
+    .nav-wrap{
+        height: 77px;
+        background-color: #191B25;
+        li{
+            float: left;
+            a{
+                display: block;
+                text-align: center;
+                width: 134px;
+                height: 76px;
+                line-height: 76px;
+                font-size: 18px;
+                color: #9f9f9f;
+            }
+            a:hover{
+                color: #FF5900;
+            }
+        }
+        .nav-wrap-f{
+            float: right;
+            position: relative;
+            a{
+                color: #FF5900;
+                width: 150px;
+                margin-left: 10px;
+            }
+            span{
+                position: absolute;
+                top:25px;left: 0px;
+                width: 30px;
+                height: 30px;
+                background: url(../images/navico.png);
+                background-position: -237px -5px;
+            }
+        }
+    }
+}
+
+
+/* 所在位置 */
+#weizi{
+    margin: 24px auto 8px;
+    color: #606060;
+    height: 18px;
+    cursor: pointer;
+    font-size: 12px;
+    a{
+        color: #606060;
+    }
+}
+
+/* 中心区域 */
+#shopping{
+    height: 730px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    .role{
+        height: 95px;
+        margin-left: 22px;
+        .head{
+            height: 22px;
+            padding-top: 18px;
+            border-bottom: 1px solid #DDDDDD;
+            margin-bottom: 14px;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: bold;
+        }
+        .role-c{
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            margin-top: 30px;
+            b{
+                font-weight: bold;
+                margin-left: 5px;
+            }
+            a{
+                display: inline-block;
+                width: 75px;
+                height: 25px;
+                line-height: 25px;
+                padding: 0 10px;
+                margin-left: 15px;
+                color: #fff;
+                background-color: #F74A4A;
+            }
+        }
+    }
+    .commodity{
+        height: 195px;
+        margin: 10px 22px 0;
+        padding-top: 15px;
+        .tableBox{
+            display: block;
+            min-height: 128px;
+            padding: 0 16px;
+            background-color: #F3F4F6;
+            tr{
+                display: block;
+                border-bottom: 1px solid #DEDFDE;
+                padding: 8px 0;
+                th{
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: #222;
+                    width: 100px;
+                }
+                .col1{
+                    width: 92.8px;
+                }
+                .col2{
+                    width: 227.6px;
+                }
+                .col3{
+                    width: 68px;
+                }
+                .col4{
+                    width: 133.6px;
+                }
+                .col5{
+                    width: 56px;
+                }
+                .col6{
+                    width: 109.6px;
+                }
+                .col7{
+                    width: 114.4px;
+                }
+                .col8{
+                    width: 134.4px;
+                }
+                .col9{
+                    width: 123.2px;
+                }
+            }
+            tbody {
+                tr:hover{
+                    background-color: #FFFEEE;
+                }
+                .col2{
+                    text-align: left;
+                    a{
+                        color: #3A3F4A;
+                        float: left;
+                        line-height: 28px;
+                        height: 28px;
+                    }
+                    img{
+                        color: #3A3F4A;
+                        margin-right: 5px;
+                        width: 39px;
+                        height: 28px;
+                    }
+                }
+                .input{
+                    width: 16px;
+                    height: 22px;
+                    background-color: #F0F0F0;
+                    border: 1px solid #F0F0F0;
+                    cursor: pointer;
+                }
+                .input:hover{
+                    color: #F74A4A;
+                    border: 1px solid #F74A4A;
+                }
+                .inputJian{
+                    font-weight: bold;
+                }
+                .input2{
+                    width: 36px;
+                    height: 20px;
+                    border: 1px solid #DDDDDD;
+                    text-align: center;
+                }
+                .col9 a{
+                    color: #1C8BDE;
+                }
+            }
+        }
+    }
+    .discount{
+        margin-left: 22px;
+        .discount-d{
+            padding: 9px 9px;
+            line-height: 21px;
+            font-size: 12px;
+            p{
+                float: left; 
+                span{
+                    color: #E01407;
+                }
+            }
+            a{
+                margin-left: 10px;
+                color: #1C8BDE;
+            }
+        }
+        .discount-m{
+            position: relative;
+            height: 56px;
+            line-height: 56px;
+            background-color: #FFFEEE;
+            margin: 20px 18px 50px 0;
+            padding: 0 170px 0 32px;
+            border: 1px solid #DDDDDD;
+            span{
+                color: red;
+                font-weight: bold;
+                font-size: 12px;
+                float: left;
+            }
+            a{
+                float: left;
+                color: #3A3F4A;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 14px;
+                float: right;
+                b{
+                    font-size: 20px;
+                    color: #F74A4A;
+                    font-weight: bold;
+                }
+            }
+            input{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 146px;
+                height: 56px;
+                text-align: center;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: #666666;
+                border: 0;
+                cursor: pointer;
+            }
+        }
+    }
+    .tips{
+        margin-left: 22px;
+        p{
+            font-size: 14px;
+            color: #60605F;
+            line-height: 24px;
+        }
+        p:nth-child(2) span{
+            color: red;
+        }
+    }
+}

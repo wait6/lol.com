@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* 底部区域 */
+#footer{
+    background: #3b3f4a;
+    .footer-wrap{
+        height: 354px;
+        .fw-h{
+            padding: 25px 0 33px;
+            width: 1252px;
+            height: 150px;
+            .fw-h-l{
+                float: left;
+                width: 216px;
+                height: 150px;
+                border-right: 1px solid #444853;
+                h4{
+                    height: 32px;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #ACB1BB;
+                    i{
+                        float: left;
+                        margin: 0 10px 0 20px;
+                        width: 32px;
+                        height: 32px;
+                    }
+                    .icon1{
+                        background: url(../images/icon.png) no-repeat;
+                        background-position: 0 -136px;
+                    }
+                    .icon2{
+                        background: url(../images/icon.png) no-repeat;
+                        background-position: -32px -136px;
+                    }
+                    .icon3{
+                        background: url(../images/icon.png) no-repeat;
+                        background-position: -63px -136px;
+                    }
+                    .icon4{
+                        background: url(../images/icon.png) no-repeat;
+                        background-position: -95px -136px;
+                    }
+                }
+                ul{
+                    height: 94px;
+                    margin-left: 64px;
+                    li{
+                        line-height: 22px;
+                        a{
+                            color: #ACB1BB;
+                            font-size: 12px;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .fw-h-r{
+                float: left;
+                width: 298px;
+                height: 150px;
+                .ewm{
+                    float: left;
+                    margin-left: 40px;
+                    width: 100px;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        color: #A4ABB4;
+                        margin-top: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .fw-f{
+            padding-top: 30px;
+            border-top: 1px solid #444853;
+            .fw-f-wrap{
+                height: 55px;
+                p{
+                    width: 1190px;
+                    font-size: 12px;
+                    text-align: center;
+                    color: #81858F;
+                }
+                .f-w-list {
+                    li{
+                        float: left;
+                        font-size: 12px;
+                        color: #81858F;
+                    }
+                    a{
+                        padding-left: 3px;
+                        color: #81858F;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .copy a{
+                    color: #81858F;
+                }
+            }
+        }
+    }
+}
+
+/* 返回顶部 */
+#fixed{
+    position: fixed;
+    right: 20px;
+    bottom: 300px;
+    .f-h{
+        display: block;
+        border: 1px solid #e1e1e1;
+        background-color: #fff;
+        width: 68px;
+        height: 57px;
+        text-align: center;
+        font-size: 12px;
+        color: #3A3F4A;
+        i{
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(../images/bg.png);
+            background-position: -122px -153px;
+            margin: 0 auto;
+        }
+    }
+    .f-h:hover i{
+        background-position: -162px -153px;
+    }
+    .f-f{
+        display: block;
+        border: 1px solid #e1e1e1;
+        background-color: #fff;
+        width: 68px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        color: #3A3F4A;
+        margin-top: 4px;
+    }
+    a:hover{
+        background-color: #36AB87;
+        color: #fff;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/register.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <!-- banner图 -->
+        <div id="banner">
+            <div id="img-box">
+                <img src="../images/zhuce-banner01.jpg" alt="">
+                <img src="../images/zhuce-banner02.jpg" alt="">
+                <img src="../images/zhuce-banner03.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- logo -->
+        <div id="c-head">
+            <div class="c-head">
+                <a class="ch-r ch" href="#">意见反馈</a>
+                <div class="ch-c ch">
+                    简体中文&nbsp;
+                    <img src="../images/down.png" alt="">
+                </div>
+                <a class="ch-l ch" href="#">
+                    <p>QQ靓号</p>
+                    <img src="../images/logo3.png" alt="">
+                </a>
+                <a class="logo" href="#">QQ</a>
+            </div>
+        </div>
+
+        <!-- 注册 -->
+        <div id="content">
+            <div class="c-body">
+                <h1>欢迎注册QQ</h1>
+                <h2>
+                    每一天，乐在沟通。
+                    <a href="#">免费靓号</a>
+                </h2>
+                <div class="input name">
+                    <input id="userId" type="text" placeholder="昵称">
+                    <span></span>
+                </div>
+                <div class="input password">
+                    <input id="passId" type="text" placeholder="密码">
+                    <span></span>
+                </div>
+                <div class="input list phone">
+                    <input class="list-l" type="text" value="+86">
+                    <img src="../images/down.png" alt="">
+                    <input id="phone" type="text" placeholder="手机号码">
+                    <span></span>
+                </div>
+                <p>可通过该手机号找回密码</p>
+                <div class="input list test none">
+                    <input class="list-l" type="text" placeholder="短信验证码">
+                    <input id="phone" type="submit" value="发送短信验证码">
+                    <span></span>
+                </div>
+                <div class="register">
+                    <input id="btnReg" type="submit" value="立即注册">
+                </div>
+                <div id="messagebox"></div>
+                <div class="clause">
+                    <img src="../images/checkbox_check.png" alt="">
+                    <p>我已阅读并同意相关服务条款和隐私政策</p>
+                    <img src="../images/down.png" alt="">
+                </div>
+            </div>
+            <p class="copy">Copyright © 1998-2020Tencent All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/reg.js"></script>

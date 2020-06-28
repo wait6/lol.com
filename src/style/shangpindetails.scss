@@ -1,0 +1,552 @@
+@charset "utf-8";
+/* 公共样式 */
+.header-wrap,#nav,#weizi,#commodity,.footer-wrap{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #F3F4F6;
+}
+
+#main{
+    background: url(../images/bg-head.jpg) no-repeat top center;
+}
+
+/* 顶部区域 */
+#header{
+    height: 30px;
+    font-size: 12px;
+    background-color: #F9F9F9;
+    line-height: 30px;
+    .menu1{
+        float: left;
+        a{
+            float: left;
+            color: #666666;
+        }
+        a:nth-child(1){
+            padding-left: 15px;
+            background: url(../images/indexico.png) no-repeat;
+            background-position: -42px -817px;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        i{
+            float: left;
+            color: #ECE8E7;
+            margin: 0 10px;
+        }
+    }
+    .menu2{
+        float: right;
+        li{
+            float: left;
+            a{
+                color: #666666;
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+        }
+        i{
+            float: left;
+            color: #ECE8E7;
+            margin: 0 10px;
+        }
+        .submenu{
+            display: block;
+            width: 72px;
+            height: 21px;
+            line-height: 21px;
+            margin-top: 5px;
+            padding-left: 8px;
+            background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/indexico.png) no-repeat;
+            background-position: -125px -273px;
+            border: 1px solid #E7E8E7;
+        }
+    } 
+    .list-game{
+        width: 715px;
+        height: 237px;
+        padding: 5px;
+        background-color: #EFEFEF;
+        position: absolute;
+        top: 40px;right: 200px;
+        z-index: 1;
+        .game{
+            float: left;
+            p{
+                width: 304px;
+                color: #0096D0;
+                font-weight: bold;
+                border: 1px solid #D6D6D6;
+                background-color: #ffffff;
+                span{
+                    color: #BBBFCB;
+                    font-size: 10px;
+                }
+            }
+            .jj{
+                width: 202px;
+            }
+            .xx{
+                width: 100px;
+            }
+            ul{
+                float: left;
+                li{
+                    border: 1px solid #D6D6D6;
+                    background-color: #ffffff;
+                    width: 94px;
+                    height: 21px;
+                    line-height: 21px;
+                    padding: 3px;
+                    a{
+                        display: inline-block;
+                        width: 78px;
+                        color: #464646;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    a:hover{
+                        color: #1994EB;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 10px;
+                        height: 21px;
+                        background: url(../images/gamearea.png)no-repeat center center;
+                        background-position: 0 -50px;
+                    }
+                }
+            }
+        }
+    }
+    .none{
+        display: none;
+    }
+}
+
+/* 导航区域 */
+#nav{
+    min-height: 220px;
+    /* 导航区域上部 */
+    .logo{
+        height: 125px;
+        background: url(../images/search.jpg) no-repeat;
+        .logo-djc{
+            a{
+                display: block;
+                float: left;
+                width: 280px;
+                height: 55px;
+                background: url(../images/navico.png) no-repeat;
+                background-position: -670px -5px;
+                margin-top: 40px;
+            }
+        }
+        .search-input-box{
+            float: left;
+            position: relative;
+            margin-left: 80px;
+            margin-top: 40px;
+            width: 520px;
+            height: 51px;
+            background: url(../images/navico.png);
+            background-position: -1001px 0;
+            .search-input{
+                float: left;
+                width: 450px;
+                padding: 18px 10px 15px 10px;
+                height: 18px;
+                line-height: 18px;
+                border: 0;
+                color: #9f9f9f;
+                font-size: 14px;
+                background: none;
+            }
+            .search-btn{
+                position: absolute;
+                top: 2px;left: 470px;
+                width: 49px;
+                height: 46px;
+                background: url(../images/navico.png);
+                background-position: -1558px 0;
+                display: block;
+            }
+        }
+        .logo-lol{
+            a{
+                display: block;
+                float: right;
+                width: 223px;
+                height: 59px;
+                background: url(../images/navico.png) no-repeat;
+                background-position: -437px -5px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    /* 导航区域中部 */
+    .nav-wrap{
+        height: 77px;
+        background-color: #121526;
+        li{
+            float: left;
+            a{
+                display: block;
+                text-align: center;
+                width: 134px;
+                height: 76px;
+                line-height: 76px;
+                font-size: 18px;
+                color: #9f9f9f;
+            }
+            a:hover{
+                color: #FF5900;
+            }
+        }
+        .nav-wrap-f{
+            float: right;
+            position: relative;
+            a{
+                color: #FF5900;
+                width: 150px;
+                margin-left: 10px;
+            }
+            span{
+                position: absolute;
+                top:25px;left: 0px;
+                width: 30px;
+                height: 30px;
+                background: url(../images/navico.png);
+                background-position: -237px -5px;
+            }
+        }
+    }
+
+    /* 导航区域下部 */
+    .navicon{
+        height: 50px;
+        background-color: #E6E6E8;
+        li{
+            float:left;
+            a{
+                display: block;
+                width: 118px;
+                height: 50px;
+                font-size: 14px;
+                text-align: center;
+                line-height: 48px;
+                color: #222222;
+            }
+            a:hover{
+                color: #36AB87;
+            }
+        }
+        .navicon-h{
+            a{
+                width: 152px;
+                height: 48px;
+                background-color: #E6E6E8;
+            }
+        }
+    }
+}
+
+/* 所在位置 */
+#weizi{
+    margin: 24px auto 8px;
+    color: #606060;
+    height: 18px;
+    cursor: pointer;
+    font-size: 12px;
+    a{
+        color: #606060;
+    }
+}
+
+/* 商品区 */
+#commodity{
+    min-height: 1028px;
+    margin-bottom: 30px;
+    .commodity-list{
+        float: left;
+        
+        .look{
+            width: 202px;
+            height: 59px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 0 10px 0 14px;
+            .cl-head {
+                height: 47px;
+                border-bottom: 2px solid #F3F4F6;
+                p{
+                    display: block;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    color: #555555;
+                    padding: 13px 0 13px ;
+                    border-bottom: 2px solid #36AB87;
+                }
+                span{
+                    display: block;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    color: #555555;
+                    padding-top: 13px;
+                }
+            }
+        }
+
+
+        .like{
+            width: 202px;
+            height: 59px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 0 10px 0 14px;
+            .cl-head {
+                height: 47px;
+                border-bottom: 2px solid #F3F4F6;
+                p{
+                    display: block;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    color: #555555;
+                    padding: 13px 0 13px ;
+                    border-bottom: 2px solid #36AB87;
+                }
+            }
+        }
+    
+        .cl-f{
+            width: 202px;
+            height: 890px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 0 10px 0 14px;
+            .cl-head {
+                height: 47px;
+                border-bottom: 2px solid #F3F4F6;
+                p{
+                    display: block;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    color: #555555;
+                    padding: 13px 0 13px ;
+                    border-bottom: 2px solid #36AB87;
+                }
+            }
+            .cl-f-p{
+                margin-top: 14px;
+                display: block;
+                width: 192px;
+                height: 230px;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed #ccc;
+                img{
+                    width: 100%;
+                }
+                h3{
+                    font-size: 14px;
+                    color: #535353;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                p{
+                    font-size: 13px;
+                    color: #FF5900;
+                    font-weight: bold;
+                }
+                
+            }
+            .more{
+                font-size: 12px;
+                float: right;
+                color: #000;
+            }
+        }
+    }
+
+    .commodity-content{
+        width: 952px;
+        height: 516px;
+        background-color: #fff;
+        float: left;
+        margin-left: 10px;
+        .shangpin{
+            width: 888px;
+            height: 240px;
+            padding-left: 58px;
+            padding-top: 30px;
+            .img{
+                margin-top: 35px;
+                float: left;
+                width: 260px;
+                height: 184px;
+                img{
+                    width: 100%;
+                    height: 154px;
+                }
+                p{
+                    margin-top: 6px;
+                    font-size: 12px;
+                    width: 68px;
+                    height: 25px;
+                    display: inline-block;
+                    margin-left: 70px;
+                    line-height: 27px;
+                    color: #9f9f9f;
+                    text-indent: 19px;
+                    background: url(../images/comico02.png) no-repeat;
+                    background-position: -5px -521px;
+                }
+                em{
+                    float: right;
+                    width: 16px;
+                    height: 15px;
+                    background: url(../images/comico02.png) no-repeat;
+                    background-position: -5px -969px;
+                    cursor: pointer;
+                }
+            }
+    
+            .price{
+                width: 456px;
+                height: 221px;
+                margin-left: 23px;
+                float: left;
+                h3{
+                    width: 450px;
+                    margin-top: 10px;
+                    text-align: left;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #2e2e2e;
+                    margin-bottom: 10px;
+                }
+                .bg{
+                    width: 456px;
+                    height: 76px;
+                    background: url(../images/comico02.png) no-repeat;
+                    background-position: -5px -143px;
+                    p:first-child{
+                        padding-top: 10px;
+                    }
+                    span{
+                        font-size: 24px;
+                        color: #ff5900;
+                        font-weight: bold;
+                    }
+                    
+                }
+                p{
+                    font-size: 14px;
+                    color: #606060;
+                    margin-left: 10px;
+                }
+                p:nth-child(3){
+                    padding: 20px 0;
+                }
+            }
+    
+        }
+
+        .input{
+            position: relative;
+            height: 120px;
+            margin-left: 360px;
+            #count{
+                text-align: center;
+                width: 30px;
+            }
+            .plus{
+                position: absolute;
+                top: -70px;left: -20px;
+                display: inline-block;
+                width: 142px;
+                height: 42px;
+                background-color: #ff5900;
+                line-height: 42px;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                margin-top: 10px;
+            }
+            .give{
+                position: absolute;
+                top: -70px;left: 120px;
+                display: inline-block;
+                width: 142px;
+                height: 42px;
+                background-color: #259afe;
+                line-height: 42px;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                margin-left: 18px;
+                margin-top: 10px;
+            }
+        }
+    
+        .details{
+            width: 910px;
+            height: 99px;
+            margin: 0 20px;
+            border: 1px solid #ddd;
+            .details-h{
+                position: relative;
+                display: block;
+                margin: 10px 0 0 75px;
+                height: 20px;
+                width: 705px;
+                background: url(../images/comico02.png) no-repeat;
+                background-position: -5px -229px;
+                background-color: #fff;
+                .d{
+                    position: absolute;
+                    left: -70px;top: 0;
+                    font-weight: bold;
+                    color: #222;
+                    font-size: 14px;
+                }
+                .p{
+                    position: absolute;
+                    right: -70px;top: 0;
+                    color: #9f9f9f;
+                    font-size: 14px;
+                    i{
+                        position: absolute;
+                        top: 0;right: -50px;
+                        display: block;
+                        width: 45px;
+                        height: 28px;
+                        background: url(../images/comico02.png) no-repeat;
+                        background-position: -5px -347px;
+                    }
+                }
+            }
+            .details-f{
+                padding: 40px 0 72px;
+                height: auto;
+                font-size: 14px;
+                line-height: 22px;
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
+
+
