@@ -611,9 +611,8 @@ body {
 }
 
 #commodity .commodity-content .details .details-f {
-  padding: 40px 0 72px;
+  padding: 0 60px 0;
   height: auto;
   font-size: 14px;
   line-height: 22px;
-  margin-left: 10%;
 }

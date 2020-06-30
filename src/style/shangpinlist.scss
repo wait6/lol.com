@@ -447,10 +447,14 @@ body{
             }
             .ch-f{
                 .ch-f-l {
+                    a:first-child{
+                        color: #ff5900;
+                    }
                     a{
                         float: left;
                         font-size: 14px;
                         color: #222222;
+                        margin: 20px;
                     }
                     a:nth-child(1){
                         float: left;
@@ -460,7 +464,7 @@ body{
                         float: right;
                         width: 10px;
                         height: 8px;
-                        margin: 10px 40px 0 5px;
+                        margin: 7px 40px 0 5px;
                         background: url(../images/comico.png) no-repeat;
                         background-position: -25px -71px;
                     }
@@ -468,7 +472,7 @@ body{
                         float: right;
                         width: 10px;
                         height: 8px;
-                        margin: 10px 0 0 5px;
+                        margin: 7px 0 0 5px;
                         background: url(../images/comico.png) no-repeat;
                         background-position: -40px -72px;
                     }
@@ -476,20 +480,24 @@ body{
                 .ch-f-r{
                     float: left;
                     margin-left: 40px;
+                    margin-top: 20px;
+                    line-height: 20px;
+                    height: 20px;
                     a{
                         float: left;
                         font-size: 12px;
                         margin-right: 10px;
                         color: #222222;
+                        line-height: 20px;
                     }
                     .icon3{
                         float: left;
-                        margin: 6px 5px 0 0;
                         width: 14px;
                         height: 14px;
                         background: url(../images/comico.png) no-repeat;
                         background-position: -5px -252px;
                         cursor: pointer;
+                        margin: 3px 4px 0;
                     }
                 }
             }
@@ -598,6 +606,7 @@ body{
                     border: 1px solid #DDDDDD;
                     margin: 0 5px;
                     background: #fff;
+                    color: #000;
                 }
                 .page-head{
                     border: 1px solid #36ab87;

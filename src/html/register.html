@@ -57,7 +57,7 @@
                     <input class="list-l" type="text" value="+86">
                     <img src="../images/down.png" alt="">
                     <input id="phone" type="text" placeholder="手机号码">
-                    <span></span>
+                    <span class="x"></span>
                 </div>
                 <p>可通过该手机号找回密码</p>
                 <div class="input list test none">
@@ -82,4 +82,76 @@
 
 </html>
 <script src="../js/jquery-3.2.1.min.js"></script>
-<script src="../js/reg.js"></script>
+<script src="../js/regster.js"></script>
+<script>
+    {
+        let ord = 0;
+        let myTimer = null;
+        let $img = $("#img-box>img");
+
+        function autoPlay() {
+            myTimer = setInterval(function () {
+                goImg(ord + 1);
+            }, 3000);
+        }
+
+        function goImg(transOrd) {
+
+            if (transOrd == ord) {
+                return;
+            }
+
+            let outOrd = ord;
+            ord = transOrd;
+
+            if (ord > $img.length - 1) {
+                ord = 0;
+            } else if (ord < 0) {
+                ord = $img.length - 1;
+            }
+
+            $img.eq(outOrd).animate({ "opacity": 0 }, 1000);
+            $img.eq(ord).animate({ "opacity": 1 }, 1000);
+
+        }
+
+        function stopPlay() {
+            window.clearInterval(myTimer);
+            myTimer = null;
+        }
+
+        $(function () {
+            //自动播放
+            autoPlay();
+
+            //鼠标放入停止
+            $("#img-box").mouseover(function () {
+                stopPlay();
+            });
+
+            //鼠标离开继续播放    
+            $("#img-box").mouseout(function () {
+                autoPlay();
+            });
+
+            //窗口离开时停止播放
+            window.onblur = function () {
+                stopPlay();
+            }
+
+            //窗口聚焦时播放
+            window.onfocus = function () {
+                autoPlay();
+            }
+
+        });
+    }
+    
+    $('.phone').on('mouseover', function () {
+        $('.test').removeClass('none');
+    });
+    $('.phone').on('mouseout', function () {
+        $('.test').addClass('none');
+    });
+
+</script>
