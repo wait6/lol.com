@@ -278,9 +278,9 @@ body{
         }
     }
     .commodity{
-        height: 195px;
         margin: 10px 22px 0;
         padding-top: 15px;
+        font-size: 14px;
         .tableBox{
             display: block;
             min-height: 128px;
@@ -298,27 +298,42 @@ body{
                 }
                 .col1{
                     width: 92.8px;
+                    .check{
+                        margin-left: 30px;
+                    }
                 }
                 .col2{
                     width: 227.6px;
+                    span{
+                        display: inline-block;
+                        width: 150px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
                 .col3{
                     width: 68px;
+                    text-align: center;
                 }
                 .col4{
                     width: 133.6px;
+                    text-align: center;
                 }
                 .col5{
                     width: 56px;
+                    text-align: center;
                 }
                 .col6{
                     width: 109.6px;
                 }
                 .col7{
                     width: 114.4px;
+                    text-align: center;
                 }
                 .col8{
                     width: 134.4px;
+                    text-align: center;
                 }
                 .col9{
                     width: 123.2px;
@@ -349,6 +364,7 @@ body{
                     background-color: #F0F0F0;
                     border: 1px solid #F0F0F0;
                     cursor: pointer;
+                    
                 }
                 .input:hover{
                     color: #F74A4A;
@@ -356,6 +372,7 @@ body{
                 }
                 .inputJian{
                     font-weight: bold;
+                    margin-left: 20px;
                 }
                 .input2{
                     width: 36px;
@@ -365,6 +382,7 @@ body{
                 }
                 .col9 a{
                     color: #1C8BDE;
+                    margin-left: 20px;
                 }
             }
         }

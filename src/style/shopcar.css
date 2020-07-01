@@ -323,9 +323,9 @@ body {
 }
 
 #shopping .commodity {
-  height: 195px;
   margin: 10px 22px 0;
   padding-top: 15px;
+  font-size: 14px;
 }
 
 #shopping .commodity .tableBox {
@@ -352,20 +352,35 @@ body {
   width: 92.8px;
 }
 
+#shopping .commodity .tableBox tr .col1 .check {
+  margin-left: 30px;
+}
+
 #shopping .commodity .tableBox tr .col2 {
   width: 227.6px;
 }
 
+#shopping .commodity .tableBox tr .col2 span {
+  display: inline-block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #shopping .commodity .tableBox tr .col3 {
   width: 68px;
+  text-align: center;
 }
 
 #shopping .commodity .tableBox tr .col4 {
   width: 133.6px;
+  text-align: center;
 }
 
 #shopping .commodity .tableBox tr .col5 {
   width: 56px;
+  text-align: center;
 }
 
 #shopping .commodity .tableBox tr .col6 {
@@ -374,10 +389,12 @@ body {
 
 #shopping .commodity .tableBox tr .col7 {
   width: 114.4px;
+  text-align: center;
 }
 
 #shopping .commodity .tableBox tr .col8 {
   width: 134.4px;
+  text-align: center;
 }
 
 #shopping .commodity .tableBox tr .col9 {
@@ -421,6 +438,7 @@ body {
 
 #shopping .commodity .tableBox tbody .inputJian {
   font-weight: bold;
+  margin-left: 20px;
 }
 
 #shopping .commodity .tableBox tbody .input2 {
@@ -432,6 +450,7 @@ body {
 
 #shopping .commodity .tableBox tbody .col9 a {
   color: #1C8BDE;
+  margin-left: 20px;
 }
 
 #shopping .discount {

@@ -173,10 +173,6 @@
   width: 255px;
 }
 
-#main #content .c-body .none {
-  display: none;
-}
-
 #main #content .c-body .test {
   margin-top: 20px;
 }
@@ -244,6 +240,7 @@
   font-size: 14px;
   color: #bbb;
   text-align: center;
-  margin: 30px 0;
+  margin-top: 150px;
+  margin-bottom: 50px;
   font-weight: lighter;
 }

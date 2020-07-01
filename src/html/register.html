@@ -24,16 +24,16 @@
         <!-- logo -->
         <div id="c-head">
             <div class="c-head">
-                <a class="ch-r ch" href="#">意见反馈</a>
+                <a class="ch-r ch" href="javascript:;">意见反馈</a>
                 <div class="ch-c ch">
                     简体中文&nbsp;
                     <img src="../images/down.png" alt="">
                 </div>
-                <a class="ch-l ch" href="#">
+                <a class="ch-l ch" href="javascript:;">
                     <p>QQ靓号</p>
                     <img src="../images/logo3.png" alt="">
                 </a>
-                <a class="logo" href="#">QQ</a>
+                <a class="logo" href="javascript:;">QQ</a>
             </div>
         </div>
 
@@ -43,32 +43,33 @@
                 <h1>欢迎注册QQ</h1>
                 <h2>
                     每一天，乐在沟通。
-                    <a href="#">免费靓号</a>
+                    <a href="javascript:;">免费靓号</a>
                 </h2>
-                <div class="input name">
-                    <input id="userId" type="text" placeholder="昵称">
-                    <span></span>
-                </div>
-                <div class="input password">
-                    <input id="passId" type="text" placeholder="密码">
-                    <span></span>
-                </div>
-                <div class="input list phone">
-                    <input class="list-l" type="text" value="+86">
-                    <img src="../images/down.png" alt="">
-                    <input id="phone" type="text" placeholder="手机号码">
-                    <span class="x"></span>
-                </div>
-                <p>可通过该手机号找回密码</p>
-                <div class="input list test none">
-                    <input class="list-l" type="text" placeholder="短信验证码">
-                    <input id="phone" type="submit" value="发送短信验证码">
-                    <span></span>
-                </div>
-                <div class="register">
-                    <input id="btnReg" type="submit" value="立即注册">
-                </div>
-                <div id="messagebox"></div>
+                <form action="../php/reg.php" method="POST">
+                    <div class="input name">
+                        <input id="userId" type="text" name="username" placeholder="昵称">
+                        <span>数字，字母，汉字组成，不能以数字开头，2-16位</span>
+                    </div>
+                    <div class="input password">
+                        <input id="passId" type="text" name="password" placeholder="密码">
+                        <span>6-16位数字和字母</span>
+                    </div>
+                    <div class="input list phone">
+                        <input class="list-l" type="text" value="+86">
+                        <img src="../images/down.png" alt="">
+                        <input id="phone" type="text" name="phone" placeholder="手机号码">
+                        <span class="x"></span>
+                    </div>
+                    <p>可通过该手机号找回密码</p>
+                    <!-- <div class="input list test">
+                        <input class="list-l" type="text" name="message" placeholder="短信验证码">
+                        <input id="phone" type="submit" value="发送短信验证码">
+                        <span></span>
+                    </div> -->
+                    <div class="register">
+                        <input id="btnReg" type="submit" value="立即注册">
+                    </div>
+                </form>
                 <div class="clause">
                     <img src="../images/checkbox_check.png" alt="">
                     <p>我已阅读并同意相关服务条款和隐私政策</p>
@@ -146,12 +147,4 @@
 
         });
     }
-    
-    $('.phone').on('mouseover', function () {
-        $('.test').removeClass('none');
-    });
-    $('.phone').on('mouseout', function () {
-        $('.test').addClass('none');
-    });
-
 </script>

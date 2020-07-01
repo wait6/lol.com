@@ -1,31 +1,33 @@
 <?php
 
-    header('content-type:text/html;charset=utf-8');
+header('content-type:text/html;charset=utf-8');
 
-    $mysql_conf = array(
-        'host'=>'localhost:3306',//地址
-        'db_user'=>'root',//用户名
-        'db_pass'=>'root',//密码
-        'db'=>'mydb2003'//数据库名
-    );
+$mysql_conf = array(
+    'host'=>'localhost:3306',  // 地址
+    'db_user'=>'root', // 用户名
+    'db_pass'=>'root', // 密码
+    'db'=>'mydb2003'    // 数据库名
+);
 
-    //连接数据库
-    $mysqli = new mysqli($mysql_conf['host'],$mysql_conf['db_user'],$mysql_conf['db_pass']);
+// 连接数据库（登录） mysqli
+$mysqli = new mysqli($mysql_conf['host'],$mysql_conf['db_user'],$mysql_conf['db_pass']);
 
-    if($mysqli->connect_errno){
-        //判断是否连接成功
-        die('连接错误'.$mysqli->connect_errno);
-    }
+// var_dump($mysqli);
 
-    //设置查询字符集
-    $mysqli->query('set names utf8');
+if($mysqli->connect_errno){  // 判断是否连接成功
+    // die()函数 用于终止代码执行
+    die('连接错误'.$mysqli->connect_errno);
+}
 
-    //选择数据库
-    $select_db = $mysqli->select_db($mysql_conf['db']);
+// 设置查询字符集
+$mysqli->query('set names utf8');
 
-    //判断数据库是否选择成功
-    if(!$select_db){
-        die('数据库选择错误'.$mysqli->error);
-    }
+// 选择数据库
+$select_db = $mysqli->select_db($mysql_conf['db']);
+
+// 判断数据库是否选择成功
+if(!$select_db){
+    die('数据库选择错误'.$mysqli->error);
+}
 
 ?>

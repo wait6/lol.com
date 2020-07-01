@@ -174,7 +174,7 @@
             </div>
             <ul class="nav-wrap">
                 <li class="nav-wrap-h"><a href="javascript:;">首页</a></li>
-                <li><a href="javascript:;">商品列表</a></li>
+                <li><a href="./shangpinlist.html">商品列表</a></li>
                 <li><a href="javascript:;">活动专区</a></li>
                 <li><a href="javascript:;">限时折扣</a></li>
                 <li><a href="javascript:;">聚豆乐园</a></li>
@@ -182,7 +182,7 @@
                 <li><a href="javascript:;">个人中心</a></li>
                 <li class="nav-wrap-f">
                     <span></span>
-                    <a href="javascript:;">购物车（0）</a>
+                    <a href="./shopcar.html">购物车（0）</a>
                 </li>
             </ul>
             <ul class="navicon">
@@ -612,3 +612,83 @@
 </html>
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/game-nav.js"></script>
+<script>
+
+    let ord = 0;
+    let myTimer = null;
+    let $img = $("#img-box>img");
+    let $imgBox = $("#img-box");
+    let $li = $(".banner-c>ul>li");
+
+    function goImg(transOrd) {
+
+        if (transOrd == ord) {
+            return;
+        }
+
+        let outOrd = ord;
+        ord = transOrd;
+
+        if (ord > $img.length - 1) {
+            ord = 0;
+        } else if (ord < 0) {
+            ord = $img.length - 1;
+        }
+
+        $imgBox.eq(0).animate({ left: -770 * ord }, 300);
+        $imgBox.eq(ord).animate({ left: 0 }, 300);
+
+        $li.eq(outOrd).css({ "background-color": "#E8E8E8" });
+        $li.eq(ord).css({ "background-color": "#36AB87" });
+
+    }
+
+    function autoPlay() {
+        myTimer = setInterval(function () {
+            goImg(ord + 1);
+        }, 2000);
+    }
+
+    function stopPlay() {
+        window.clearInterval(myTimer);
+        myTimer = null;
+    }
+
+    $(function () {
+        //自动播放
+        autoPlay();
+
+        //鼠标放入选项时跳到对应的图片上
+        $li.mouseover(function () {
+            stopPlay();
+            goImg($(this).index());
+        });
+
+        //鼠标离开选项时继续播放
+        $li.mouseout(function () {
+            autoPlay();
+        });
+
+        //鼠标放入停止
+        $imgBox.mouseover(function () {
+            stopPlay();
+        });
+
+        //鼠标离开继续播放    
+        $imgBox.mouseout(function () {
+            autoPlay();
+        });
+
+        //窗口离开时停止播放
+        window.onblur = function () {
+            stopPlay();
+        }
+
+        //窗口聚焦时播放
+        window.onfocus = function () {
+            autoPlay();
+        }
+
+    });
+
+</script>
