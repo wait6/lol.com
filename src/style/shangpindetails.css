@@ -309,7 +309,7 @@ body {
 
 /* 商品区 */
 #commodity {
-  min-height: 1028px;
+  min-height: 1528px;
   margin-bottom: 30px;
 }
 
@@ -319,7 +319,6 @@ body {
 
 #commodity .commodity-list .look {
   width: 202px;
-  height: 59px;
   margin-bottom: 10px;
   background-color: #fff;
   padding: 0 10px 0 14px;
@@ -349,9 +348,83 @@ body {
   padding-top: 13px;
 }
 
+#commodity .commodity-list .look .cl-content {
+  position: relative;
+  display: block;
+  height: 72px;
+  padding-top: 16px;
+  border-bottom: 1px dashed #ccc;
+}
+
+#commodity .commodity-list .look .cl-content .comico {
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  background: url(../images/comico.png);
+  display: block;
+  width: 20px;
+  height: 24px;
+  font-size: 12px;
+  background-position: -5px -592px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+#commodity .commodity-list .look .cl-content img {
+  display: block;
+  width: 76px;
+  height: 54px;
+  float: left;
+  margin-right: 8px;
+}
+
+#commodity .commodity-list .look .cl-content h3 {
+  color: #000;
+  width: 108px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#commodity .commodity-list .look .cl-content h4 {
+  font-size: 12px;
+  color: #000;
+}
+
+#commodity .commodity-list .look .cl-content p {
+  font-size: 12px;
+  color: #000;
+}
+
+#commodity .commodity-list .look .cl-content p span {
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+}
+
+#commodity .commodity-list .look .cl-content:hover h3 {
+  color: #36AB87;
+  text-decoration: underline;
+}
+
+#commodity .commodity-list .look .cl-content:hover p {
+  color: #FF5900;
+}
+
+#commodity .commodity-list .look .cl-content:hover p span {
+  color: #FF5900;
+}
+
+#commodity .commodity-list .look .cl-content-f {
+  border: 0;
+}
+
 #commodity .commodity-list .like {
   width: 202px;
-  height: 59px;
   margin-bottom: 10px;
   background-color: #fff;
   padding: 0 10px 0 14px;
@@ -370,6 +443,81 @@ body {
   color: #555555;
   padding: 13px 0 13px;
   border-bottom: 2px solid #36AB87;
+}
+
+#commodity .commodity-list .like .cl-content {
+  position: relative;
+  display: block;
+  height: 72px;
+  padding-top: 16px;
+  border-bottom: 1px dashed #ccc;
+}
+
+#commodity .commodity-list .like .cl-content .comico {
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  background: url(../images/comico.png);
+  display: block;
+  width: 20px;
+  height: 24px;
+  font-size: 12px;
+  background-position: -5px -592px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+#commodity .commodity-list .like .cl-content img {
+  display: block;
+  width: 76px;
+  height: 54px;
+  float: left;
+  margin-right: 8px;
+}
+
+#commodity .commodity-list .like .cl-content h3 {
+  color: #000;
+  width: 108px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#commodity .commodity-list .like .cl-content h4 {
+  font-size: 12px;
+  color: #000;
+}
+
+#commodity .commodity-list .like .cl-content p {
+  font-size: 12px;
+  color: #000;
+}
+
+#commodity .commodity-list .like .cl-content p span {
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+}
+
+#commodity .commodity-list .like .cl-content:hover h3 {
+  color: #36AB87;
+  text-decoration: underline;
+}
+
+#commodity .commodity-list .like .cl-content:hover p {
+  color: #FF5900;
+}
+
+#commodity .commodity-list .like .cl-content:hover p span {
+  color: #FF5900;
+}
+
+#commodity .commodity-list .like .cl-content-f {
+  border: 0;
 }
 
 #commodity .commodity-list .cl-f {
