@@ -45,5 +45,5 @@ gulp.task("default",async ()=>{
         .pipe(imagemin())
         .pipe(gulp.dest("E:/phpstudy_pro/WWW/lol.com/src/images"));
     });
-
+    
 });
