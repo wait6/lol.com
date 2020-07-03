@@ -684,6 +684,10 @@ body {
   font-weight: bolder;
   color: #2E2E2E;
   text-align: center;
+  margin: 6px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #commodity .commodity-wrap .cw-content .cw-list2 {
