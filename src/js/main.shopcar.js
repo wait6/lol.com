@@ -6,7 +6,7 @@ require.config({
     }
 });
 
-require(['jquery','shopcar'], function ($,shopcar) {
+require(['jquery', 'shopcar', 'cookie'], function ($, shopcar, cookie) {
     shopcar.render(function () {
         //减号
         $('.inputJian').on('click', function () {
@@ -62,13 +62,20 @@ require(['jquery','shopcar'], function ($,shopcar) {
             $('.price').text(money.toFixed(2));
         }
 
-        //删除
-        $('.delete').on('click', function () {
-            let str = document.cookie;
-            let arr = JSON.stringify(str);
-            console.log(str);
-            console.log(arr);
-            // $(this).parent().parent().remove();
-        });
+        function shop() {
+            let shop = cookie.get('shop');
+            shop = JSON.parse(shop);
+            console.log(shop);
+
+            $('.delete').on('click', function () {
+                // console.log(shop);
+                let index = ($(this).parent().parent().index());
+                $(this).parent().parent().remove();
+                shop.splice(index, 1);
+                // console.log(shop);
+                cookie.set('shop', JSON.stringify(shop), 1);
+            });
+        }
+        shop();
     });
 })
