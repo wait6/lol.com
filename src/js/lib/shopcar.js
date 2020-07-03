@@ -42,7 +42,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                             let pic = JSON.parse(elm.pic);
                             let arr = shop.filter(val => val.id == elm.id);
                             tempstr += `
-                            <tr>
+                            <tr class="hang">
                                 <td class="col1">
                                     <input class="check" type="checkbox">
                                 </td>

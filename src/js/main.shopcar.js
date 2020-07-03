@@ -6,12 +6,14 @@ require.config({
     }
 });
 
-require(['shopcar'], function (shopcar) {
+require(['jquery','shopcar'], function ($,shopcar) {
     shopcar.render(function () {
+        //减号
         $('.inputJian').on('click', function () {
             alert('不能再减了!')
         });
 
+        //加号
         $('.inputJia').on('click', function () {
             alert('该道具单次最多购买1件!')
         });
@@ -38,16 +40,18 @@ require(['shopcar'], function (shopcar) {
             danjia();
         });
 
+        //总价
         function zonjia() {
-            var money = 0;
+            let money = 0;
             $('.money').each(function (index, ele) {
                 money += parseFloat($(ele).text());
             });
             $('.price').text(money.toFixed(2));
         }
 
+        //单价
         function danjia() {
-            var money = 0;
+            let money = 0;
             let $tr = $("table tr:gt(0)").not("table tr:last").prevObject;
             $tr.each(function () {
                 // 复选框是不是选中了
@@ -58,8 +62,13 @@ require(['shopcar'], function (shopcar) {
             $('.price').text(money.toFixed(2));
         }
 
+        //删除
         $('.delete').on('click', function () {
-            alert('1');
+            let str = document.cookie;
+            let arr = JSON.stringify(str);
+            console.log(str);
+            console.log(arr);
+            // $(this).parent().parent().remove();
         });
     });
 })
