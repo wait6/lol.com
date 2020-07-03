@@ -64,16 +64,17 @@ require(['jquery', 'shopcar', 'cookie'], function ($, shopcar, cookie) {
 
         function shop() {
             let shop = cookie.get('shop');
+            console.log(shop);
             shop = JSON.parse(shop);
             console.log(shop);
 
             $('.delete').on('click', function () {
-                // console.log(shop);
                 let index = ($(this).parent().parent().index());
                 $(this).parent().parent().remove();
-                shop.splice(index, 1);
-                // console.log(shop);
-                cookie.set('shop', JSON.stringify(shop), 1);
+                // shop.splice(index, 1);
+                console.log(shop.splice(index,1));
+                // cookie.set('shop', JSON.stringify(shop), 1);
+                // window.location.reload();
             });
         }
         shop();

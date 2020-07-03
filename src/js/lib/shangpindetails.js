@@ -18,7 +18,11 @@ define(['jquery', 'cookie'], function ($, cookie) {
                         <div class="img">
                             <img src="${baseUrl}/src/${pic[1].src}" alt="${baseUrl}/src/${pic[1].title}">
                             <p>收藏商品</p>
-                            <em></em>
+                            <a class="fdj" href="javascript:;"></a>
+                            <div class="bigImgBox none">
+                                <img class="bigImg" src="${baseUrl}/src/${pic[1].src}" alt="${baseUrl}/src/${pic[1].title}">
+                            </div>
+                            <a href="javascript:;" class="close none"></a>
                         </div>
                         <div class="price">
                             <h3>${res.title}</h3>

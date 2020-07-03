@@ -12,5 +12,13 @@ require(['jquery', 'shangpindetails'], function ($, shangpindetails) {
             alert('添加成功');
             shangpindetails.addItem(id, price, $('#count').val())
         });
+        $('.close').on('click',function(){
+            $('.bigImgBox').addClass('none');
+            $('.close').addClass('none');
+        });
+        $('.fdj').on('click', function () {
+            $('.bigImgBox').removeClass('none');
+            $('.close').removeClass('none')
+        });
     });
 });
