@@ -62,6 +62,7 @@ require(['jquery', 'shopcar', 'cookie'], function ($, shopcar, cookie) {
             $('.price').text(money.toFixed(2));
         }
 
+        //删除
         function shop() {
             let shop = cookie.get('shop');
             console.log(shop);

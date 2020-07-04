@@ -59,6 +59,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                 }
             });
         },
+        //获取cookie
         addItem: function (id, price, num) {
             let shop = cookie.get('shop');
             let product = {
