@@ -36,9 +36,6 @@ define(['jquery', 'cookie'], function ($, cookie) {
                         <div class="input">
                             <a class="plus" href="javascript:;">加入购物车</a>
                             <a class="give" href="javascript:;">赠送</a>
-                            <input id="btnReduce" type="button" value=" - ">
-                            <input id="count" type="text" value="1" min="1" max="1">
-                            <input id="btnAdd" type="button" value=" + "><br>
                         </div>
                         <div class="details">
                             <div class="details-h">
