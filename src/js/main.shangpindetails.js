@@ -25,5 +25,13 @@ require(['jquery', 'shangpindetails'], function ($, shangpindetails) {
             $('.bigImgBox').removeClass('none');
             $('.close').removeClass('none')
         });
+
+        //二维码
+        $('.p').on('mouseover',function(){
+            $('.ewm').removeClass('none');
+        });
+        $('.p').on('mouseout',function(){
+            $('.ewm').addClass('none');
+        });
     });
 });

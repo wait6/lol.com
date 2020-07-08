@@ -72,10 +72,10 @@ require(['jquery', 'shopcar', 'cookie'], function ($, shopcar, cookie) {
             $('.delete').on('click', function () {
                 let index = ($(this).parent().parent().index());
                 $(this).parent().parent().remove();
-                // shop.splice(index, 1);
+                shop.splice(index, 1);
                 console.log(shop.splice(index,1));
-                // cookie.set('shop', JSON.stringify(shop), 1);
-                // window.location.reload();
+                cookie.set('shop', JSON.stringify(shop), 1);
+                window.location.reload();
             });
         }
         shop();

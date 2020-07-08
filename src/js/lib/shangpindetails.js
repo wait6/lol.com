@@ -46,6 +46,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                                 <a class="p" href="javascript:;">
                                     手机购买
                                     <i></i>
+                                    <img class="ewm none" src="../images/code-index.png">
                                 </a>
                             </div>
                             <div class="details-f">

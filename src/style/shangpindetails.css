@@ -791,6 +791,18 @@ body {
   background-position: -5px -347px;
 }
 
+#commodity .commodity-content .details .details-h .p .ewm {
+  position: absolute;
+  top: 30px;
+  right: -60px;
+  width: 170px;
+  height: 170px;
+}
+
+#commodity .commodity-content .details .details-h .p .none {
+  display: none;
+}
+
 #commodity .commodity-content .details .details-f {
   padding: 0 60px 0;
   height: auto;
